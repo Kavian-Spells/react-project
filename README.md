@@ -3,7 +3,7 @@
 ## Project Requirements
 
 - It must use React, React Router, Redux, and at least one other 3rd party React library (e.g. Material UI, deepcopy)
-- By <u>August 24th</u>, the project must be publicly deployed and accessible. However it is a good idea to release early and release often.
+- By <strong>August 24th</strong>, the project must be publicly deployed and accessible. However it is a good idea to release early and release often.
 - Your MVP should be done by <u>August 19th</u>. Use the rest of the time to do stretch goals and fix bugs.
 - Everybody must submit their Github repository.
 - Every repo should have a README file explaining the project and how to install it and run it.
