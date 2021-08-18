@@ -3,25 +3,43 @@
 ## Project Requirements
 
 Project: Complete Restaurant Review Site
-Requirements: https://blog.codeanalogies.com/2016/05/18/6-absurd-ideas-for-building-your-first-web-app/
+Requirements: https://dev.to/basir/react-node-tutorial-full-ecommerce-in-5-hours-2020-1hha
+
+Frontend: HTML, CSS
+
+Token: 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
 
 MVP:
-- [x] Add real restaurants to database
-- [x] Link to actual restaurant websites
-- [x] Find a different name
-- [x] Add complete CSS styling
-- [x] Complete ALL requirements from original project: https://github.com/DigitalCraftsStudents/fs-flex-03-2021/blob/main/lectures/week-14-15/rest-reviewer-app.md
-- [x] Allow the user to write a review and rate the following fast-food specific topics on 1–5 scale: Bathroom Quality, Staff, Cleanliness, Drive-thru Sassy Level, Delivery Speed
+- [x] Install Tools
+- [x] Website Template
+- [x] Products List
+- [ ] Sidebar 
+- [ ] Create React App
+- [ ] Render Products
+- [ ] Details page for each product (image, name, ratings, price, description)
+- [ ] Create Node Server
+- [ ] Fetch Server data
+- [ ] Manage State w/ Redux
+- [ ] Add Redux to details
+- [ ] Shopping cart (add, delete)
+- [ ] Connect PostgresQL
+- [ ] Sign In User
+- [ ] Manage Products
+- [ ] Checkout Wizard
 
-Bugs:
-- [ ] Getting words and sentences to separate
-- [x] Website links
+- [ ] Search capability
+- [ ] Product Sorting
+- [ ] User authentication
+- [ ] Shipping page
 
 Stretch Goals:
-- [ ] User Systems: Allow the ability to create an account with a picture, username and location
-- [ ] Picture Storage: Ability to add pictures to the review
-- [ ] GeoLocation: Use Google Maps to let a user pick out a specific restaurant, either through searching a location on the map or through typing in a name and choosing from a list (typeahead)
-- [ ] Responsive design
+- [ ] Add stretch goals here
+- [ ] Paypal, Stripe integration
+- [ ] Order details/history
+
+Admin Mode:
+- [ ] Create/modify Products in UI
+- [ ] See all orders
 
 ## Class Standards
 
