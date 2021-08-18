@@ -7,12 +7,13 @@ Requirements: https://dev.to/basir/react-node-tutorial-full-ecommerce-in-5-hours
 
 Frontend: HTML, CSS
 
+Token: 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
+
 MVP:
 - [x] Install Tools
 - [x] Website Template
 - [x] Products List
 - [ ] Sidebar 
-<!-- Cant get the javascript right -->
 - [ ] Create React App
 - [ ] Render Products
 - [ ] Details page for each product (image, name, ratings, price, description)
