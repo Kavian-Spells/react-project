@@ -5,17 +5,19 @@
 Project: Complete Restaurant Review Site
 Requirements: https://dev.to/basir/react-node-tutorial-full-ecommerce-in-5-hours-2020-1hha
 
-Frontend: HTML, CSS
+Frontend: HTML, CSS (flexbox, grid), Make sure to use Material UI
 
 Token: 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
+
+git remote set-url origin https://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@github.com/Kavian-Spells/react-project
 
 MVP:
 - [x] Install Tools
 - [x] Website Template
 - [x] Products List
-- [ ] Sidebar 
-- [ ] Create React App
-- [ ] Render Products
+- [x] Sidebar 
+- [x] Create React App
+- [x] Render Products
 - [ ] Details page for each product (image, name, ratings, price, description)
 - [ ] Create Node Server
 - [ ] Fetch Server data
