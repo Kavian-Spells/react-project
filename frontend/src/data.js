@@ -1,6 +1,7 @@
 export default {
     products: [
         {
+            _id: '1',
             name: "Olive Oil Styling Gel",
             category: 'Gel',
             image: '/images/eco.jpg',
@@ -9,26 +10,29 @@ export default {
             numReviews: 7
         },
         {
-            name: "Olive Oil Styling Gel",
+            _id: '2',
+            name: "Curl Enhancing Smoothie",
             category: 'Gel',
 
-            image: '/images/eco.jpg',
+            image: '/images/shea.jpg',
             price: 2,
             rating: 5,
             numReviews: 8
         },
         {
-            name: "Olive Oil Styling Gel",
+            _id: '3',
+            name: "Olive Oil Scalp Oil",
             category: 'Gel',
-            image: '/images/eco.jpg',
+            image: '/images/olive.jpg',
             price: 4,
             rating: 4,
             numReviews: 6
         },
         {
-            name: "Best Comb",
+            _id: '4',
+            name: "Detangling Comb",
             category: 'combs',
-            image: '/images/eco.jpg',
+            image: '/images/comb.jpg',
             price: 2,
             rating: 3.5,
             numReviews: 5
