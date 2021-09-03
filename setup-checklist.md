@@ -4,9 +4,9 @@ Checklist for setting up you your React App.
 
 ## Start App
 
-- [ ] Created Git repo
-- [ ] Cloned repo
-- [ ] cd into repo and run `npx create-react-app .`
+- [x] Created Git repo
+- [x] Cloned repo
+- [x] cd into repo and run `npx create-react-app .`
 
 ## React Router
 

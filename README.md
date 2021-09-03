@@ -1,15 +1,12 @@
-# Week 21: React Solo Project
+# Capstone Project
 
 ## Project Requirements
 
-Project: Complete Restaurant Review Site
-Requirements: https://dev.to/basir/react-node-tutorial-full-ecommerce-in-5-hours-2020-1hha
+Project: https://dev.to/basir/react-node-tutorial-full-ecommerce-in-5-hours-2020-1hha
 
-Frontend: HTML, CSS (flexbox, grid), Make sure to use Material UI
-
-Token: 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
-
-git remote set-url origin https://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@github.com/Kavian-Spells/react-project
+Frontend: HTML, CSS (flexbox, grid), React
+<!-- Make sure to use Material UI 
+1:21:17-->
 
 MVP:
 - [x] Install Tools
@@ -25,6 +22,7 @@ MVP:
 - [ ] Add Redux to details
 - [ ] Shopping cart (add, delete)
 - [ ] Connect PostgresQL
+
 - [ ] Sign In User
 - [ ] Manage Products
 - [ ] Checkout Wizard
@@ -46,8 +44,8 @@ Admin Mode:
 ## Class Standards
 
 - It must use React, React Router, Redux, and at least one other 3rd party React library (e.g. Material UI, deepcopy)
-- By <strong>August 24th</strong>, the project must be publicly deployed and accessible. However it is a good idea to release early and release often.
-- Your MVP should be done by <strong>August 19th</strong>. Use the rest of the time to do stretch goals and fix bugs.
+- By <strong>September 28th</strong>, the project must be publicly deployed and accessible. However it is a good idea to release early and release often.
+- Your MVP should be done by <strong>September 18th</strong>. Use the rest of the time to do stretch goals and fix bugs.
 - Code for at least one hour EVERYDAY
 - Every repo should have a README file explaining the project and how to install it and run it.
 - Perform Pull Requests and Code Reviews with others.
@@ -57,12 +55,8 @@ Admin Mode:
     3. Problems you encountered and how you solved them.
     4. Anything else cool?
 
-Submit your Git repo for the application with this form at the start of the project:
+Submit your Git repo for the application with this form at the start of the project: https://forms.gle/CvoADwTK29QWAF8n7
 
-https://forms.gle/CvoADwTK29QWAF8n7
+Project Start: 9/2 - Project End: 9/28
 
-Project Start: 8/12 - Project End: 8/24
-
-### Project Due: Start of Class Tuesday August 24th
-
-Presentations will be that during that class.
+### Demo Day: Start of Class Tuesday September 28th

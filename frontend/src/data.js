@@ -13,7 +13,6 @@ export default {
             _id: '2',
             name: "Curl Enhancing Smoothie",
             category: 'Gel',
-
             image: '/images/shea.jpg',
             price: 2,
             rating: 5,
