@@ -15,7 +15,7 @@ MVP:
 - [x] Sidebar 
 - [x] Create React App
 - [x] Render Products
-- [ ] Details page for each product (image, name, ratings, price, description)
+- [x] Details page for each product (image, name, ratings, price, description)
 - [ ] Create Node Server
 - [ ] Fetch Server data
 - [ ] Manage State w/ Redux
