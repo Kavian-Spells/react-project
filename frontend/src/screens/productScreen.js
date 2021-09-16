@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom';
 function ProductScreen(props) {
     console.log(props.match.params.id)
     const product = data.products.find(x=> x._id === props.match.params.id);
-    return <div>
+    return <div className="back-to-results">
         <div><Link to="/">Back to Results</Link></div>
             <div className="details">
                 <div className="details-image">
@@ -21,10 +21,30 @@ function ProductScreen(props) {
                         <br></br>   
                         <li>Price: <b>${product.price}</b></li>
                         <br></br>
-                        <li>Description: Nice Shirt</li>
+                        <li>Description: 
+                            <div>
+                                {product.description}
+                            </div> 
+                        </li>
                     </ul>
                 </div>
-                <div className="details-action"></div>
+                <div className="details-action">
+                    <ul>
+                        <li>Price: {product.price}</li>
+                        <li>Status: {product.status}</li>
+                        <li>Qty: 
+                            <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </li>
+                        <li>
+                            <button className="button">Add to Cart</button>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
 }

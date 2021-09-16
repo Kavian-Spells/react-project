@@ -7,7 +7,8 @@ export default {
             image: '/images/eco.jpg',
             price: 3,
             rating: 4.5,
-            numReviews: 7
+            numReviews: 7,
+            description: 'This is the description'
         },
         {
             _id: '2',
