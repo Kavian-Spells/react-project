@@ -6,6 +6,7 @@ export default {
             category: 'Gel',
             image: '/images/eco.jpg',
             price: 3,
+            brand: 'Eco Style',
             rating: 4.5,
             numReviews: 7,
             description: 'This is the description',
@@ -16,6 +17,7 @@ export default {
             category: 'Gel',
             image: '/images/shea.jpg',
             price: 2,
+            brand: 'Shea Moisture',
             rating: 5,
             numReviews: 8
         },
@@ -25,6 +27,7 @@ export default {
             category: 'Gel',
             image: '/images/olive.jpg',
             price: 4,
+            brand: 'ORS',
             rating: 4,
             numReviews: 6
         },
@@ -34,6 +37,7 @@ export default {
             category: 'combs',
             image: '/images/comb.jpg',
             price: 2,
+            brand: 'Beauty Supply',
             rating: 3.5,
             numReviews: 5
         },

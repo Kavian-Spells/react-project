@@ -1,0 +1,32 @@
+{
+  "name": "react-project",
+  "version": "1.0.0",
+  "description": "## Project Requirements",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch backend --exec babel-node backend/server.js",
+    "dev": "node backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/Kavian-Spells/react-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kavian-Spells/react-project/issues"
+  },
+  "homepage": "https://github.com/Kavian-Spells/react-project#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.5",
+    "@babel/node": "^7.15.4",
+    "@babel/preset-env": "^7.15.6",
+    "nodemon": "^2.0.12"
+  }
+}
