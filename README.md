@@ -18,7 +18,7 @@ MVP:
 - [x] Details page for each product (image, name, ratings, price, description)
 - [x] Create Node Server
 - [x] Fetch Server data
-- [ ] Manage State w/ Redux
+- [x] Manage State w/ Redux
 - [ ] Add Redux to details
 - [ ] Shopping cart (add, delete)
 - [ ] Connect PostgresQL
