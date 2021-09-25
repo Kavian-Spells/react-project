@@ -3,6 +3,8 @@ import {Link} from 'react-router-dom';
 // import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
 import { listProducts } from '../actions/productActions';
+// import { connect } from 'react-redux'; 
+// connect is needed for mapStateToProps
 
 function HomeScreen(props) {
 
