@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import {Link} from 'react-router-dom'; 
 import axios from 'axios';
+import { connect } from 'react-redux';
 
-
-function HomeScreen(props) {
+function HomeScreenUI(props) {
 
   const [products, setProduct] = useState([]);
 
@@ -41,4 +41,8 @@ function HomeScreen(props) {
   </ul>
 }
 
+const mapStateToProps = (state) => {
+  console.log(state);
+}
+const HomeScreen = connect(mapStateToProps, null)(HomeScreenUI)
 export default HomeScreen; 
