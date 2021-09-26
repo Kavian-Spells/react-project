@@ -9,23 +9,23 @@ Frontend: HTML, CSS (flexbox, grid), React
 1:21:17-->
 
 MVP:
-- [x] Install Tools
-- [x] Website Template
-- [x] Products List
-- [x] Sidebar 
-- [x] Create React App
-- [x] Render Products
-- [x] Details page for each product (image, name, ratings, price, description)
-- [x] Create Node Server
-- [x] Fetch Server data
-- [x] Manage State w/ Redux
-- [ ] Add Redux to details
-- [ ] Shopping cart (add, delete)
-- [ ] Connect PostgresQL
+- [x] Install Tools (2/17)
+- [x] Website Template (3/17)
+- [x] Products List (4/17)
+- [x] Sidebar (5/17)
+- [x] Create React App (6/17)
+- [x] Render Products (7/17)
+- [x] Product Details page (8/17)
+- [x] Create Node Server (9/17)
+- [x] Fetch Server data (10/17)
+- [x] Manage State w/ Redux (11/17)
+- [x] Add Redux to details (12/17)
+- [ ] Shopping cart (add, delete) (13/17)
+- [ ] Connect PostgresQL (14/17)
 
-- [ ] Sign In User
-- [ ] Manage Products
-- [ ] Checkout Wizard
+- [ ] Sign In User (15/17)
+- [ ] Manage Products (16/17)
+- [ ] Checkout Wizard (17/17)
 
 - [ ] Search capability
 - [ ] Product Sorting

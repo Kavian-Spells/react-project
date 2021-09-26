@@ -10,6 +10,7 @@ export default {
             rating: 4.5,
             numReviews: 7,
             description: 'This is the description',
+            inventory: 6,
         },
         {
             _id: '2',
@@ -19,7 +20,8 @@ export default {
             price: 2,
             brand: 'Shea Moisture',
             rating: 5,
-            numReviews: 8
+            numReviews: 8,
+            inventory: 0,
         },
         {
             _id: '3',
@@ -29,7 +31,8 @@ export default {
             price: 4,
             brand: 'ORS',
             rating: 4,
-            numReviews: 6
+            numReviews: 6,
+            inventory: 3,
         },
         {
             _id: '4',
@@ -39,7 +42,8 @@ export default {
             price: 2,
             brand: 'Beauty Supply',
             rating: 3.5,
-            numReviews: 5
+            numReviews: 5,
+            inventory: 9,
         },
     ]
 }
