@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import data from '../data';
+// import data from '../data';
 import { Link } from 'react-router-dom'; 
 import { useDispatch, useSelector } from 'react-redux';
 import { detailsProduct } from '../actions/productActions';
@@ -21,6 +21,11 @@ function ProductScreen(props) {
             //
         };
     }, [])
+
+    // Removed array from above because of below error
+    // Line 23:8:  React Hook useEffect has missing dependencies: 
+        // 'dispatch' and 'props.match.params.id'. 
+        // Either include them or remove the dependency array
 
     const handleAddToCart = () => {
         props.history.push("/cart/" + props.match.params.id + "?qty=" + qty)
@@ -65,7 +70,7 @@ function ProductScreen(props) {
                             </li>
                             <li>
                                 {product.inventory > 0 &&
-                                    <button onClick={handleAddToCart} className="button">Add to Cart</button>
+                                    <button onClick={handleAddToCart} className="button primary">Add to Cart</button>
                                 } 
                            </li>
                         </ul>
