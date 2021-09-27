@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import {Link} from 'react-router-dom'; 
-// import axios from 'axios';
+// import axios from 'axios'; --> redux thunk allows us to use ajax requests to backend
 import { useDispatch, useSelector } from 'react-redux';
 import { listProducts } from '../actions/productActions';
 // import { connect } from 'react-redux'; 
@@ -8,25 +8,25 @@ import { listProducts } from '../actions/productActions';
 
 function HomeScreen(props) {
 
-  // const [products, setProduct] = useState([]);
+  // const [products, setProduct] = useState([]); --> React Hook
   // const category = props.match.params.id ? props.match.params.id : '';
-  const productList = useSelector(state => state.productList);
-  const { products, loading, error } = productList;
+  const productList = useSelector(state => state.productList); //fetches product list from redux store
+  const { products, loading, error } = productList; //further extraction from store/reducers
   // console.log(category);
 
   // Needed cors in order to call localhost:5000 
   // Might want to make localhost:5000 a global variable or stick it into redux
   // This will help you avoid problems when you deploy it 
   
-  const dispatch = useDispatch();
+  const dispatch = useDispatch(); // This Hook allows us to dispatch any redux action inside react components
 
   useEffect(() => {
     // console.log(products);
-    // const fetchData = async () => {
+    // const fetchData = async () => { 
     //   const { data } = await axios.get('http://localhost:5000/api/products');
     //   setProduct(data);
     // }
-    // fetchData();
+    // fetchData(); --> Replaced by useSelector
     dispatch(listProducts());
     return () => {
       //
