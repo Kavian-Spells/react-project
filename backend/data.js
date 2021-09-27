@@ -21,7 +21,7 @@ export default {
             brand: 'Shea Moisture',
             rating: 5,
             numReviews: 8,
-            inventory: 0,
+            inventory: 3,
         },
         {
             _id: '3',
@@ -32,7 +32,7 @@ export default {
             brand: 'ORS',
             rating: 4,
             numReviews: 6,
-            inventory: 3,
+            inventory: 0,
         },
         {
             _id: '4',

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import {Link} from 'react-router-dom'; 
 // import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
@@ -9,8 +9,10 @@ import { listProducts } from '../actions/productActions';
 function HomeScreen(props) {
 
   // const [products, setProduct] = useState([]);
+  // const category = props.match.params.id ? props.match.params.id : '';
   const productList = useSelector(state => state.productList);
   const { products, loading, error } = productList;
+  // console.log(category);
 
   // Needed cors in order to call localhost:5000 
   // Might want to make localhost:5000 a global variable or stick it into redux
@@ -30,6 +32,11 @@ function HomeScreen(props) {
       //
     };
   }, [])
+
+    // Removed array from above because of below error
+    //  Line 32:6:  React Hook useEffect has a missing dependency:
+        // 'dispatch'
+        // Either include them or remove the dependency array
 
     return loading? <div>Loading...</div> :
     error? <div>{error}</div> :

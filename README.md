@@ -4,7 +4,7 @@
 
 Project: https://dev.to/basir/react-node-tutorial-full-ecommerce-in-5-hours-2020-1hha
 
-Frontend: HTML, CSS (flexbox, grid), React
+Frontend: HTML, CSS (flexbox, grid), React, js-cookie
 <!-- Make sure to use Material UI 
 1:21:17-->
 
@@ -20,7 +20,7 @@ MVP:
 - [x] Fetch Server data (10/17)
 - [x] Manage State w/ Redux (11/17)
 - [x] Add Redux to details (12/17)
-- [ ] Shopping cart (add, delete) (13/17)
+- [x] Shopping cart (add, delete) (13/17)
 - [ ] Connect PostgresQL (14/17)
 
 - [ ] Sign In User (15/17)
