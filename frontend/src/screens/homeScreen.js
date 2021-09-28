@@ -31,7 +31,7 @@ function HomeScreen(props) {
     return () => {
       //
     };
-  }, [])
+  }, [dispatch])
 
     // Removed array from above because of below error
     //  Line 32:6:  React Hook useEffect has a missing dependency:

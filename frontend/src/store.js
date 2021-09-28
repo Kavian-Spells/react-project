@@ -8,7 +8,13 @@ import { cartReducer } from './reducers/cartReducers';
 // const cartItems = Cookie.getJSON('cartItems') || [];
 
 // const initialState = { cart: { cartItems } };
-const initialState = {};
+const initialState = {
+    cart: {
+        cartItems: localStorage.getItem('cartItems') ?
+        JSON.parse(localStorage.getItem('cartItems'))
+        : [],
+    }
+};
 const reducer = combineReducers({
     productList: productListReducer,
     productDetails: productDetailsReducer,

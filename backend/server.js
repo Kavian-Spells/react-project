@@ -25,6 +25,12 @@ app.get('/api/products', (req, res) => {
     res.send(data.products);
 });
 
+app.get('/', (req, res) => {
+    res.send('Server is ready');
+});
+
 const PORT = 5000;
-app.listen(PORT, () => {console.log(`Server started at http://localhost:${PORT}`)});
+app.listen(PORT, () => {
+    console.log(`Server started at http://localhost:${PORT}`);
+});
 

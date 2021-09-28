@@ -3,8 +3,13 @@ import {BrowserRouter, Route, Link} from 'react-router-dom';
 import HomeScreen from './screens/homeScreen';
 import ProductScreen from './screens/productScreen';
 import CartScreen from './screens/cartScreen';
+import { useSelector } from 'react-redux';
 
 function App() {
+    // Get access to cartItems from redux
+    const cart = useSelector(state => state.cart);
+    const { cartItems } = cart;
+
   const openMenu = () => {
     document.querySelector(".sidebar").classList.add("open")
   }
@@ -21,8 +26,12 @@ function App() {
                     <Link to="/">Mocha Styles</Link>
                 </div>
                 <div className="header-links">
-                    <a href="cart.html">Shopping Cart</a>
-                    <a href="signin">Sign In</a>
+                    <Link to="/cart">Shopping Cart
+                    {cartItems.length > 0 && 
+                        <span className="badge">{cartItems.length}</span>
+                    }
+                    </Link>
+                    <Link to="/signin">Sign In</Link>
                 </div>
             </header>
             <aside className="sidebar">

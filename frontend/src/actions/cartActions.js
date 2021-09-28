@@ -15,6 +15,8 @@ const addToCart = (productId, qty) => async (dispatch, getState) => {
             qty,
         }
     });
+    // Use local storage to save shopping cart after refresh
+    localStorage.setItem('cartItems', JSON.stringify(getState().cart.cartItems));
 
     const { cart: { cartItems } } = getState();
     Cookie.set("cartItems", JSON.stringify(cartItems));

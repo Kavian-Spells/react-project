@@ -11,7 +11,9 @@ function CartScreen(props){
     
     
     const productId = props.match.params.id;
-    const qty = props.location.search? Number(props.location.search.split("=")[1]):1;
+    //Get qty value from productScreen in the cart handler function
+    const qty = props.location.search? Number(props.location.search.split("=")[1])
+    : 1;
     const dispatch = useDispatch();
     const removeFromCartHandler = (productId) => {
         dispatch(removeFromCart(productId));
@@ -22,7 +24,7 @@ function CartScreen(props){
         if(productId){
             dispatch(addToCart(productId, qty));
         }
-    }, [])
+    }, [dispatch, productId, qty])
 
     // Removed array from above because of below error
     // Line 20:8:  React Hook useEffect has missing dependencies: 
@@ -69,7 +71,7 @@ function CartScreen(props){
                                         <option value="2">2</option>
                                         <option value="3">3</option>
                                     </select>
-                                    <button className="button" type="button" onClick={() => removeFromCartHandler(item.product)}>
+                                    <button className="delete button" type="button" onClick={() => removeFromCartHandler(item.product)}>
                                         Delete
                                     </button>
                                 </div>
