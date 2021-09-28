@@ -8,13 +8,27 @@ import { cartReducer } from './reducers/cartReducers';
 // const cartItems = Cookie.getJSON('cartItems') || [];
 
 // const initialState = { cart: { cartItems } };
-const initialState = {};
+const initialState = {
+    cart: {
+        cartItems: localStorage.getItem('cartItems') ?
+        JSON.parse(localStorage.getItem('cartItems'))
+        : [],
+    }
+};
 const reducer = combineReducers({
     productList: productListReducer,
     productDetails: productDetailsReducer,
     cart: cartReducer,
 })
+// CombineReducers used because redux can only have one reducer at a time.
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-const store = createStore(reducer, initialState, composeEnhancer(applyMiddleware(thunk)));
+// This update to compose allows us to see our Redux state in Chrome DevTools
+
+const store = createStore(
+    reducer, 
+    initialState, 
+    composeEnhancer(applyMiddleware(thunk))
+);
+
 export default store;

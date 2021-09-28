@@ -4,7 +4,15 @@
 
 Project: https://dev.to/basir/react-node-tutorial-full-ecommerce-in-5-hours-2020-1hha
 
-Frontend: HTML, CSS (flexbox, grid), React, js-cookie
+Built Using:
+<ul>
+    <li>HTML5 and CSS3: Semantic Elements, CSS Grid, Flexbox</li>
+    <li>React: Components, Props, Events, Hooks, Router, Axios</li>
+    <li>Redux: Store, Reducers, Actions<l/i>
+    <li>Node & Express: Web API, Body Parser</li>
+    <li>Development: ESLint, Babel, Git, Github,</li>
+</ul>
+
 <!-- Make sure to use Material UI 
 1:21:17-->
 

@@ -10,17 +10,18 @@ function ProductScreen(props) {
     // console.log(props.match.params.id)
     // const product = data.products.find(x=> x._id === props.match.params.id);
     
-    const [qty, setQty] = useState(1);
+    const productId = props.match.params.id;
+    const [qty, setQty] = useState(1); // Hook to get the qty to add to cart
     const productDetails = useSelector(state => state.productDetails);
     const { product, loading, error } = productDetails;
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(detailsProduct(props.match.params.id)); 
+        dispatch(detailsProduct(productId)); 
         return () => {
             //
         };
-    }, [])
+    }, [dispatch, productId])
 
     // Removed array from above because of below error
     // Line 23:8:  React Hook useEffect has missing dependencies: 
@@ -55,25 +56,48 @@ function ProductScreen(props) {
                             </li>
                         </ul>
                     </div>
-                    <div className="details-action">
-                        <ul>
-                            <li>Price: {product.price}</li>
-                            <li>Status: {product.inventory > 0? "In Stock": "Unavailable."}</li>
-                            <li>Qty: 
-                                <select value={qty} onChange={(e) => {
-                                    setQty(e.target.value)
-                                }}>
-                                    {[...Array(product.inventory).keys()].map(x=> 
-                                        <option key={x+1} value={x+1}>{x+1}</option>
+                    <div className="details-action col-1">  
+                        <div className="card card-body">
+                            <ul>
+                                <li>Price: ${product.price}</li>
+                                <li>
+                                    <div className="row">
+                                        <div>Status: </div>
+                                        <div>
+                                            {product.inventory > 0 ? (
+                                            <span className="success">In Stock</span>
+                                            ) : (
+                                            <span className="danger">Unavailable</span>
+                                            )}
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>Qty: 
+                                    <select 
+                                        value={qty} 
+                                        onChange={(e) => setQty(e.target.value)}
+                                    >
+                                        {[...Array(product.inventory).keys()].map(
+                                            x => (
+                                                <option key={x+1} value={x+1}>
+                                                    {x+1}
+                                                </option>
+                                            )
                                         )}
-                                </select>
+                                    </select>
+                                </li>
+                                <li>
+                                    {product.inventory > 0 &&
+                                        <button 
+                                            onClick={handleAddToCart} 
+                                            className="button primary"
+                                        >
+                                            Add to Cart
+                                        </button>
+                                    } 
                             </li>
-                            <li>
-                                {product.inventory > 0 &&
-                                    <button onClick={handleAddToCart} className="button primary">Add to Cart</button>
-                                } 
-                           </li>
-                        </ul>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 )

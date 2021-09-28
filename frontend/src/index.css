@@ -54,6 +54,15 @@ button{
   padding-left: .5rem;
 }
 
+.badge {
+  background-color: #f02020;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 0.2rem 0.7rem;
+  font-size: 1.4rem;
+  margin-left: 0.4rem;
+} 
+
 .header-links a {
   color: #7f5539;
   text-decoration: none;
@@ -83,6 +92,30 @@ a {
 
 a:hover {
   color: #90be6d;
+}
+
+/* Common */
+input,
+select,
+textarea,
+button {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem #a4a4a4 solid;
+  font-size: 1.6rem;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+button {
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+input:hover,
+select:hover,
+textarea:hover,
+button:hover {
+  border: 0.1rem #404040 solid;
 }
 
 /* Home Screen */
@@ -211,12 +244,12 @@ a:hover {
   padding: 1rem;
 }
 
-.details-action {
+/* .details-action {
   border: .1rem #808080 solid;
   border-radius: .5rem;
   background-color: #f0f0f0;
   padding: 1rem;
-}
+} */
 
 .details-action ul li:last-child {
   display: flex;
@@ -238,6 +271,38 @@ a:hover {
   background-color: #f0c040;
 }
 
+/* Card */
+.card {
+  border: 0.1rem #c0c0c0 solid;
+  background-color: #f8f8f8;
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-body > * {
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-size: 2rem;
+}
+
+/* Alert */
+.loading {
+  display: block !important;
+}
+
+.success {
+  color: #20a020;
+}
+
+.danger {
+  color: #a02020;
+}
 /* Cart */
 
 .cart {
@@ -299,4 +364,8 @@ a:hover {
   flex: 1 1;
   font-size: 2.5rem;
   text-align: right;
+}
+
+.delete.button:hover {
+  background-color:#90be6d ;
 }
